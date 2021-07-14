@@ -1,15 +1,10 @@
 import Link from "next/link";
 import Head from "next/head";
+import { MainLayout } from "../components/MainLayout";
 
 export default function Index() {
   return (
-    <>
-      <Head>
-        <title>Главная страница</title>
-        <meta name="keywords" content="Ключевые слова" />
-        <meta name="description" content="Описание" />
-        <meta charSet="utf-8" />
-      </Head>
+    <MainLayout title={"Home Page"}>
       <h1>Hello Next.js</h1>
       <p>
         <Link href={"/about"}>
@@ -27,6 +22,6 @@ export default function Index() {
         necessitatibus veritatis debitis repellendus mollitia quo eius eaque,
         dolore recusandae minus quas!
       </p>
-    </>
+    </MainLayout>
   );
 }
