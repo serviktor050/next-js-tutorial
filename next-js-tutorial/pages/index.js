@@ -1,8 +1,15 @@
 import Link from "next/link";
+import Head from "next/head";
 
 export default function Index() {
   return (
     <>
+      <Head>
+        <title>Главная страница</title>
+        <meta name="keywords" content="Ключевые слова" />
+        <meta name="description" content="Описание" />
+        <meta charSet="utf-8" />
+      </Head>
       <h1>Hello Next.js</h1>
       <p>
         <Link href={"/about"}>
